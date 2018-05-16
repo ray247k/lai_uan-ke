@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('posts.index');
 });
+
+// 收到輸入表單的資料
+Route::post('/posts/', 'PostsController@store');
