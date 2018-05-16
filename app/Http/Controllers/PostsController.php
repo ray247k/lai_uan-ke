@@ -33,15 +33,13 @@ class PostsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Post $post)
     {
         $this->validate(\request(), [
            'body' => 'required'
         ]);
 
-        $post = new Post;
-        $post->body = request('body');
-        $post->save();
+        $post->addPost(\request('body'));
         return back();
     }
 
