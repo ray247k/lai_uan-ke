@@ -17,9 +17,11 @@
 
         {{-- 文章內容區域--}}
         @if( count($posts))
-            @foreach($posts as $post)
-                @include('posts.post')
-            @endforeach
+            <ol>
+                @foreach($posts as $post)
+                    <li>@include('posts.post')</li>
+                @endforeach
+            </ol>
         @else
             <h2>目前尚無文章，快來搶頭香</h2>
         @endif
