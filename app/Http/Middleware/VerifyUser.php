@@ -16,12 +16,14 @@ class VerifyUser
     public function handle($request, Closure $next)
     {
 
-        if ( ! 1 )
+        $username = $request->session()->get('username', NULL);
+
+        if ( $username === NULL )
         {
             return redirect('/');
         }
 
-        $request->attributes->add(['username' => 1]);
+        $request->attributes->add(['username' => $username]);
         return $next($request);
     }
 }
