@@ -67,7 +67,7 @@
                         <div class="form-group">
                             <label for="body">設定暱稱</label>
                             <br>
-                            <input type="text" class="form-control" id="body" name="body" placeholder="暱稱" size=2 style=width:80%>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="暱稱" size=2 style=width:80%>
                             <br>
                             <button type="submit" class="btn btn-primary">送出</button>
                         </div>
