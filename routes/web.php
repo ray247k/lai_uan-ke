@@ -16,3 +16,6 @@ Route::get('/', 'PostsController@index');
 
 // 收到輸入表單的資料
 Route::post('/posts/', 'PostsController@store');
+
+// 設定暱稱
+Route::post('/users/', 'UsersController@store');

@@ -35,12 +35,6 @@
                 position: relative;
             }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
             .content {
                 text-align: center;
             }
@@ -68,7 +62,7 @@
         <div class="flex-center position-ref full-height">
             <div class="content">
                 <div class="title m-b-md">
-                    <form method="post" action="/posts">
+                    <form method="post" action="/users">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="body">設定暱稱</label>
