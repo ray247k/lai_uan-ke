@@ -15,6 +15,13 @@ class VerifyUser
      */
     public function handle($request, Closure $next)
     {
+
+        if ( ! 1 )
+        {
+            return redirect('/');
+        }
+
+        $request->attributes->add(['username' => 1]);
         return $next($request);
     }
 }
