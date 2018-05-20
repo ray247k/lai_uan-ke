@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class UsersController extends Controller
 {
@@ -34,7 +35,8 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Session::put('username', \request('username'));
+        return redirect('/posts');
     }
 
     /**
