@@ -14,8 +14,10 @@ class PostsController extends Controller
      */
     public function index()
     {
+        $username = \request()->get('username');
+
         $posts = Post::latest()->get();
-        return view('posts.index', compact('posts'));
+        return view('posts.index', compact('posts', 'username'));
     }
 
     /**
