@@ -15,3 +15,10 @@
 + 使用者登入
 + 註冊(email, facebook)
 + 留言的下方回覆留言，讓吵架更順暢
+
+## 修改中問題
+~~1. git message 規範~~
+2. view結構劃分
+3. 用repository或是scope取代
+4. 不需要的route程式中不要出現，用except或是only過濾
+5. route改用resource
