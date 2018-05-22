@@ -21,10 +21,10 @@
 
 ~~2. view結構劃分~~
 
-3. 用repository或是scope取代
+3. 用repository或是scope取代邏輯直接寫進 model
 
 ~~4. 不需要的controller方法程式中不要出現~~
 
-5. 用except或是only過濾route方法
+~~5. 用except或是only過濾route方法~~
 
-6. route改用resource
+~~6. route改用resource~~

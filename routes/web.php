@@ -14,13 +14,9 @@
 
 Route::group(['middleware' => ['username']], function ()
 {
-// 內容頁面
-    Route::get('/posts/', 'PostsController@index');
-
-// 收到輸入表單的資料
-    Route::post('/posts/', 'PostsController@store');
+    Route::resource('/posts/', 'PostsController', ['only' => ['index', 'store']]);
 });
 
 // 設定暱稱
-Route::get('/', 'UsersController@index');
-Route::post('/users/', 'UsersController@store');
+Route::resource('/', 'UsersController', ['only' => ['index']]);
+Route::resource('/users/', 'UsersController', ['only' => ['store']]);
