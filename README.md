@@ -23,7 +23,7 @@
 
 3. 用repository或是scope取代
 
-4. 不需要的controller方法程式中不要出現
+~~4. 不需要的controller方法程式中不要出現~~
 
 5. 用except或是only過濾route方法
 
