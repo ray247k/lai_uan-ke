@@ -21,7 +21,7 @@
 
 ~~2. view結構劃分~~
 
-3. 用repository或是scope取代邏輯直接寫進 model
+~~3. 用repository或是scope取代邏輯直接寫進 model~~
 
 ~~4. 不需要的controller方法程式中不要出現~~
 
