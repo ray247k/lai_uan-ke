@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Repositories\PostRepository;
 
 class PostsController extends Controller
 {
@@ -16,7 +17,8 @@ class PostsController extends Controller
     {
         $username = \request()->get('username');
 
-        $posts = Post::latest()->get();
+        $repository = new PostRepository();
+        $posts = $repository->getAllPosts();
         return view('posts.index', compact('posts', 'username'));
     }
 
