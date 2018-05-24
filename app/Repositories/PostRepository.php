@@ -7,8 +7,6 @@
  */
 
 namespace App\Repositories;
-
-
 use App\Post;
 
 class PostRepository
@@ -16,5 +14,15 @@ class PostRepository
     public function getAllPosts()
     {
         return Post::latest()->get();
+    }
+
+    public function addPost()
+    {
+        $username = \request()->get('username');
+
+        $post = new Post;
+        $post->body = request('body');
+        $post->username = $username;
+        $post->save();
     }
 }
